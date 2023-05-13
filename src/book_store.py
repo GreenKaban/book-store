@@ -1,0 +1,3 @@
+
+class BookStore:
+    pass
