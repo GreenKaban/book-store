@@ -18,7 +18,6 @@ class BookStoreTest(unittest.TestCase):
         another_book = Book(10., 'title2', Genre.COMEDY)
         cart.add_book(book)
 
-
         book_store = BookStore([])
 
         with self.assertRaises(ValueError):
@@ -28,9 +27,8 @@ class BookStoreTest(unittest.TestCase):
         price = book_store.get_receipt(cart)
         self.assertEqual(price, 10.)
 
-
         cart.add_book(another_book)
         book_store.add_book(another_book)
 
         price = book_store.get_receipt(cart)
-        self.assertEqual(price, 10.*2*0.95)
+        self.assertEqual(price, 10. * 2 * 0.95)

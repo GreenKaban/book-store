@@ -26,4 +26,3 @@ class BookTest(unittest.TestCase):
         self.assertEqual(price, book.price)
         self.assertEqual(title, book.title)
         self.assertEqual(genre, book.genre)
-

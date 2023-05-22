@@ -24,6 +24,7 @@ def test_add_book(test_case, obj):
     test_case.assertEqual(books[0], book)
     test_case.assertEqual(books[1], another_book)
 
+
 class CartTest(unittest.TestCase):
 
     def test_add_book(self):
