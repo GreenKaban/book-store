@@ -33,7 +33,8 @@ class Book:
     def __eq__(self, other):
         if not isinstance(other, Book):
             raise ValueError(f'{other} is not Book')
-        return self._genre == other._genre and self._price == other._price and self._title == other._title
+        return self._genre == other._genre and self._price == other._price \
+            and self._title == other._title
 
     def __hash__(self):
         return hash((self._title, self._price, self._genre))
